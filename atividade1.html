@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+    <style>
+        .flex-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="column">
+            <h2>While</h2>
+            <p id="while"></p>
+        </div>
+
+        <div class="column">
+            <h2>For</h2>
+            <p id="for"></p>
+        </div>
+    </div>
+</body>
+
+<script>
+    //Laço While
+    let contador = 1;
+    let text = "";
+
+    while (contador <= 200) {
+        //alert("Volta "+contador);
+        text = text + contador + "<br>";
+        contador++;
+    }
+
+    document.getElementById("while").innerHTML = text;
+
+    //Laço For
+    let texto = "";
+
+    for (let cont = 1; cont <= 200; cont++) {
+        texto = texto + cont + "<br>"
+    }
+
+    document.getElementById("for").innerHTML = texto;
+
+
+</script>
+
+</html>
